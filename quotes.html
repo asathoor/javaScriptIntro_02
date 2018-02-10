@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript: Quote sample</title>
+    
+</head>
+
+<body>
+   
+   <main>
+       <article>
+           <h1>Dagens citat</h1>
+           <p id="citat"></p>
+       </article>
+       <article>
+           <h1>Overskrift</h1>
+           <p>Tekst</p>
+           <img src="" alt="">
+       </article>
+   </main>
+    <script>
+        let citater = [
+          "A horse, a horse, my kingdom for a horse.",
+            "Every man and every woman is a star.",
+            "The fatal glass of beer.",
+            "Sometimes it snows in April.",
+            "Here comes the Sun.",
+            "Purple Rain"
+        ];
+        
+        // vælger en id
+        let tekst = document.getElementById("citat");
+        
+        // tilfældigt nummer
+        let x = Math.floor(Math.random()*citater.length);
+        
+        // viser citatet
+        tekst.innerHTML = citater[x];
+        
+        // udfordring: skift citat ved event
+        
+        // udfordring: skift citat via en timer-funktion
+        // se: https://www.w3schools.com/jsref/met_win_settimeout.asp
+        
+        // udfordring: lav en liste med 7 citater, vis samme citat hver mandag etc.
+    </script>
+
+
+</body>
+</html>
