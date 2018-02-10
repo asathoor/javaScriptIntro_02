@@ -61,6 +61,14 @@ function myFunction() {
 		.innerHTML = "Du klikker på mig nu!";
 }
 
+/*
+KREATIV UDFORDRING: ANIMATION VIA CSS KLASSER TILFØJET MED JAVASCRIPT
+Brug en eventlistener og onclick - eller en anden event.
+Fremstil en animation for en CSS klasse.
+
+tip: element.addClass ...
+*/
+
 // hvordan man IKKE skal gøre
 // <button onclick="myFunction()">Click me</button>
 // jammen, det virker jo ...
