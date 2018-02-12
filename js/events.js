@@ -18,11 +18,11 @@ var galleri = [
 	"foto02.jpg"
 ]; // NB: skarpe parenteser!
 
-// hvordan man skriver et element ud fra listen
-
 // hvordan man kan lave et loop der printer alle elementer ud fra listen
-for (i=0; i<galleri.length; i++) {
-	console.log( galleri[i] );
+var morgen = 0;
+for (var i=0; i<galleri.length; i++) {
+	//console.log( galleri[i] );
+	visBillede( galleri[i] );
 }
 
 // hvordan man afvikler en serie af kommandoer med en funktion
@@ -31,12 +31,13 @@ function visBillede( billede ) {
 		'<article>'
 		+ '<img src="images/'
 		+ billede
-		+ '" alt="billede" class="mini">'
-		+ '<article>'
-	);
+		+ '" alt="billede" width="200" height="*" class="mini">'
+		+ '</article>'
+	); // brug hellere css ...
 }
 
-visBillede( foto );
+//visBillede( "foto02.jpg" );
+//visBillede( "foto.jpg" );
 
 /** 
  * EVENTS
@@ -52,7 +53,9 @@ visBillede( foto );
 // hvordan man vælger et element i DOM 
 // og tilføjer en eventlistener og
 // hvordan man får en eventlistener til at fyre en funktion af
-document.getElementById("etKlik").onclick = function() {myFunction()};
+document.getElementById("etKlik").onclick = function() {
+	myFunction()
+};
 
 // her er den funktion, der startes:
 function myFunction() {
