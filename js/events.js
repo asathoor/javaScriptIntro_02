@@ -50,18 +50,23 @@ function visBillede( billede ) {
 
 // hvordan JavaScript kan vælge i DOM (dokument-objekt-modellen)
 
+// EVENT og EVENTLISTENER
 // hvordan man vælger et element i DOM 
 // og tilføjer en eventlistener og
 // hvordan man får en eventlistener til at fyre en funktion af
 document.getElementById("etKlik").onclick = function() {
-	myFunction()
+	console.log( "Nogen klikker" );
 };
+
+document.getElementById("minId").onclick = function() {
+	console.log( "Nogen klikker" );
+	document.getElementById("minId").innerHTML = visBillede( "foto.jpg" );
+};
+
 
 // her er den funktion, der startes:
 function myFunction() {
-    document
-		.getElementById("etKlik")
-		.innerHTML = "Du klikker på mig nu!";
+    document.getElementById("etKlik").innerHTML = "<h1>Du klikker på mig nu! (clickevent)</h1>";
 }
 
 /*
