@@ -14,6 +14,10 @@
 
 12:00 Fokus på webdocumentary dummy
 
+## Om filerne
+
+* Husk at linke til et stylesheet fra index.html
+
 ## Dummy
 
 Opgaven i webdocumentary er at tilføje en række effekter via JavaScripts. Her kommer events ind i billedet. JavaScript er også nyttigt, når du gør ting igen-og-igen (løsningen er altid: loop). Her er den magiske formular til sådan et loop:
@@ -22,6 +26,16 @@ Opgaven i webdocumentary er at tilføje en række effekter via JavaScripts. Her 
 for (n=0; n<mitArray.length; n++) {
 	document.write( mitArray[i]  );
 }
+~~~~
+
+I JavaScript kaldes lister arrays. De kan defineres på flere måder. Den mest enkle er denne:
+
+~~~~
+var mitArray = [
+    "image01.jpg",
+    "image02.jpg",
+    "image03.jpg"s
+];
 ~~~~
 
 Du har nu mulighed for at lave "molekyler" med kode, der kan bruges i din web documentary. I CSS er `width: 100%` sikkert en rigtig god ide, når billeder skal fylde hele skærmen.
