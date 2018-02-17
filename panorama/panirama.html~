@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+    
+    
+  <title>Norge</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="Per Thykjaer Jensen" >
+
+  <link rel="stylesheet" href="style.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  
+    <article id="norge">
+        <img src="images/DSC04646.JPG" width="3000" height="1856" alt="" id="billede">
+    </article>
+    <button id="knap"> Klik på mig nu </button>
+    
+    
+    <script>
+        var bg = document.getElementById("billede");
+        var knap = document.getElementById("knap");
+        
+        knap.addEventListener("click", knapKlik);
+        
+        function knapKlik() {
+            console.log("der klikkes");
+        }
+    </script>
+</body>
+</html>
